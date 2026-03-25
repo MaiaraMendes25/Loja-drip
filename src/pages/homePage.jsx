@@ -71,7 +71,7 @@ const HomePage = () => {
           {["Group 53583.png", "Group 53584.png", "Group 53585.png"].map((image, index) => (
             <div key={index} className="relative overflow-visible bg-white rounded-xl shadow aspect-square">
               <img src={image} alt={`Coleção ${index + 1}`} className="w-full h-full object-contain p-4" />
-              <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-[3px] rounded-full z-10">30% OFF</div>
+              <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-0.75 rounded-full z-10">30% OFF</div>
               <div className="absolute bottom-6 left-4 z-10">
                 <button onClick={goToProducts} className="bg-white text-pink-600 text-sm font-semibold px-6 py-2 rounded-md shadow hover:bg-pink-100 transition">Comprar</button>
               </div>
@@ -117,7 +117,7 @@ const HomePage = () => {
       </div>
 
       <section className="bg-white py-16 px-4 md:px-20 lg:px-32 flex flex-col md:flex-row items-center gap-12 relative">
-        <div className="absolute left-1/2 -translate-x-1/2 md:left-44 md:translate-x-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full bg-gradient-to-t from-white to-purple-200/40 z-0"></div>
+        <div className="absolute left-1/2 -translate-x-1/2 md:left-44 md:translate-x-0 top-1/2 -translate-y-1/2 w-75 h-75 md:w-96 md:h-96 rounded-full bg-linear-to-br from-white to-purple-200/40 z-0"></div>
         <div className="flex-1 z-10">
           <img src={airJordanImg} alt="Air Jordan edição de colecionador" className="w-full max-w-md ml-0 mx-auto" />
         </div>
